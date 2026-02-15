@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-bg text-text antialiased;
+}
+
+.glass {
+  @apply bg-card/70 backdrop-blur-md border border-line shadow-glass;
+}
+
+.nav-link {
+  @apply rounded-ui px-3 py-1.5 text-sm font-medium text-muted transition hover:text-text hover:bg-surface/80;
+}
+
+.nav-link.active {
+  @apply text-accentSoft bg-surface;
+}
